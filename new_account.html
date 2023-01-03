@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Presentación -->
+		<title>Crear cuenta</title>
+
+		<!-- Hojas de estilo -->
+		<link rel="stylesheet" type="text/css" href="css/general.css">
+		<link rel="stylesheet" type="text/css" href="css/articles.css">
+		<link rel="stylesheet" type="text/css" href="css/new_account.css">
+		
+		<!-- Importamos fuentes desde google fonts -->
+		<link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@600&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+		
+		<!-- Favicon -->
+		<link rel="icon" type="image/png" href="img/logos/logo.png">
+
+		<!-- Fontawesome para los símbolos -->
+		<script src="https://kit.fontawesome.com/f7bd64aa23.js" crossorigin="anonymous"></script>
+
+	</head>
+
+	<body>
+		<!-- Header que incluye la presentación y un menú de navegación -->
+		<header class="titulo_principal_flex">
+					
+			<!-- logo, título, lema -->
+			<a href="index.html" id="logo">
+				<img alt="Logotipo" src="img/logos/logo.png">
+			</a>
+			<a href="index.html" id=titulo_y_lema>
+				<h1>Taskify</h1>
+				<p>Organize your life</p>
+			</a>
+			
+			<!-- Menú de navegación horizontal -->
+			<nav class="menu_principal">
+				<ul>
+					<li><a href="index.html">Tasks</a></li>
+					<li><a href="#">Create new</a></li>
+					<li><a href="calendar.html">Calendar</a></li>
+					<li><a href="media.html">Multimedia</a></li>
+					<li><a id=login href="sesion.html">Log in</a></li>
+				</ul>
+			</nav>
+
+		</header>
+
+ 	 <div class="cuerpo">
+
+			<div class="central">
+				<article>
+					<div>
+						<h2>Create an account</h2>
+					</div>
+					<form id="formulario" action="/create-account" method="post">
+						<p>Enjoy the benefits of being a Taskify member</p>
+						<br>
+						<label for="name">User</label>
+						<br>
+						<input type="text" id="name" name="name" placeholder="@">
+						<br>
+						<br>
+						<label for="country">Country of origin</label>
+						<br>
+						<select type ="country" id="country" name="country">
+							<option value=""></option>
+							<option value="+34">Spain</option>
+							<option value="+33">France</option>
+							<option value="+39">Italy</option>
+							<option value="+49">Germany</option>
+							<option value="Please insert the prefix">Other</option>
+						</select>
+						<br>
+						<br>
+						<label for="prefix">Telephone number</label>
+						<br>
+						<input type="text" id="prefix" name="prefix" placeholder="">
+						<br>
+						<br>
+						<label for="email">E-mail address</label>
+						<br>
+						<input type="email" id="email" name="email">
+						<br>
+						<br>
+						<label for="password">Password</label>
+						<br>
+						<input type="password" id="password" name="password">
+						<br>
+						<br>
+						<label for="password">Confirm your password</label>
+						<br>
+						<input type="password" id="confirm-password" name="confirm-password">
+						<br>
+						<div id="igualdad"></div>
+						<br>
+						<br>
+						<label for="gender">Gender</label>
+						<br>
+						<input type="radio" id="male" name="gender" value="male">
+						<label for="male">Male</label>
+						<br>
+						<input type="radio" id="female" name="gender" value="female">
+						<label for="female">Female</label>
+						<br>
+						<input type="radio" id="other" name="gender" value="other">
+						<label for="other">Other</label>
+						<br>
+						<br>
+						<label for="intereses">User interests</label>
+						<br>
+						<input type="checkbox" class="inter" id="educativo" name="intereses" value="educativo">
+						<label for="educativo">Educational</label>
+						<br>
+						<input type="checkbox" class="inter"  id="laboral" name="intereses" value="laboral">
+						<label for="laboral">Labour</label>
+						<br>
+						<input type="checkbox" class="inter"  id="casual" name="intereses" value="casual">
+						<label for="casual">Leisure</label>
+						<br>
+						<br>
+						<input type="checkbox" class="otro" id="suscripcion" name="newsletter" value="suscripcion">
+						<label for="suscripcion">Yes, I want to subscribe to the newsletter</label>
+						<br>
+						<input type="checkbox" class="otro" id="ofertas" name="newsletter" value="ofertas">
+						<label for="ofertas">Yes, I would like to receive offers about products, events etc.</label>
+						<br>
+						<br>
+						<p>By registering, I accept the <em><b>Conditions of service</b></em> and the <em><b>Privacy policy</b></em>.</p>
+						<input type="submit" id="boton_envio" value="Create">
+					</form>
+					<script src="js/new.js"></script>
+				</article>
+
+		</div> <!--class="central" -->
+
+		<!-- Barra de navegación a la derecha -->
+		<aside>
+
+			<h2>Aside nav</h2>
+
+			<nav class="menu_lateral"> <!-- Barra de navegación secundaria en la barra lateral -->
+				<ul>
+					<li><a href="#">View user 1</a></li>
+					<li><a href="#">View user 2</a></li>
+					<li><a href="#">View user 3</a></li>
+					<li><a href="#">View user 4</a></li>
+					<li><a href="#">View user 5</a></li>
+				</ul>
+			</nav>
+			
+		</aside>
+		
+		</div> <!-- class="cuerpo" -->
+
+		<!-- Pie de página -->
+		<footer>
+			
+			<!-- logos varios -->
+			<a href="https://www.upv.es/">
+				<img alt="Logotipo" src="img/logos/upv_white.png">
+			</a>
+
+			<div class="creditos">
+				<h3>Authors:</h3>
+
+				<hr>
+
+				<ul>
+					<li><a href="mailto:jdelpin@upv.teleco.com?Subject=Hola%20amigo&body=Env%C3%ADo%20correo%20electr%C3%B3nico.%0D%0A%0D%0AUn%20saludo.">Juan Del Pino Mena</a></li>
+					<li><a href="mailto:frazaro@teleco.upv.es?Subject=Hola%20amigo&body=Env%C3%ADo%20correo%20electr%C3%B3nico.%0D%0A%0D%0AUn%20saludo.">Francisco Zapata Romero</a></li>
+					<li><a href="mailto:amfriol@upv.teleco.com?Subject=Hola%20amigo&body=Env%C3%ADo%20correo%20electr%C3%B3nico.%0D%0A%0D%0AUn%20saludo.">Amparo Frigola Olaso</a></li>
+					<li><a href="mailto:ajorlop@upv.teleco.com?Subject=Hola%20amigo&body=Env%C3%ADo%20correo%20electr%C3%B3nico.%0D%0A%0D%0AUn%20saludo.">Alejandro Jorge López</a></li>
+					<li><a href="mailto:ajorlop@upv.teleco.com?Subject=Hola%20amigo&body=Env%C3%ADo%20correo%20electr%C3%B3nico.%0D%0A%0D%0AUn%20saludo.">David García </a></li>
+				</ul>
+			</div>
+
+		</footer>
+
+
+	</body>
+
+</html>	

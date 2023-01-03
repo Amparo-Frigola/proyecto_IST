@@ -1,0 +1,8 @@
+/* CONTENIDO DE NEW.HTML */
+div.central{
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
